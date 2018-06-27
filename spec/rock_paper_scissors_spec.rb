@@ -12,6 +12,6 @@ describe('#rock_paper_scissors') do
   end
   it('returns an answer when empty string is input') do
     game = Rps.new()
-    expect(game.wins("s", "")).to(eq(false||true))
+    expect(game.wins("s", "")).not_to be_empty
   end
 end
